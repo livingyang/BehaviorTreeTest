@@ -1,0 +1,41 @@
+{
+  "name": "behaviortreetest",
+  "version": "1.0.0",
+  "description": "使用Behavior3, Redux, Mobx，分别测试实现Behavior tree的优劣",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest",
+    "test-watch": "node_modules/.bin/jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livingyang/BehaviorTreeTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livingyang/BehaviorTreeTest/issues"
+  },
+  "homepage": "https://github.com/livingyang/BehaviorTreeTest#readme",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.4",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "typescript": "^2.8.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
