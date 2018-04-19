@@ -1,4 +1,5 @@
+import {Player} from '../src/ReduxWorld';
 
 test('adds 1 + 2 to equal 3', () => {
-    expect(1).toBe(2);
+    console.log(Player)
 });

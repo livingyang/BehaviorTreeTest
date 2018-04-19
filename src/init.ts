@@ -20,9 +20,9 @@ function counter(state = 0, action:  any) {
   // Normally you'd use a view binding library (e.g. React Redux) rather than subscribe() directly.
   // However it can also be handy to persist the current state in the localStorage.
   
-  store.subscribe(() =>
-    console.log(store.getState())
-  )
+  // store.subscribe(() =>
+  //   console.log(store.getState())
+  // )
   
 //   exports store;
   // The only way to mutate the internal state is to dispatch an action.
