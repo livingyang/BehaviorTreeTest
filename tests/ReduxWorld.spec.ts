@@ -1,6 +1,7 @@
 import {Player, CreatePlayer, PlayerState, CreateStep, InitialWorldState, ReduxWorld, AddPlayer} from '../src/ReduxWorld';
 
 test('patrol', () => {
+    // player 在这两点之间来回巡逻： (0, 0) <==> (10, 10)
     let player = CreatePlayer();
     player.state = PlayerState.Patrol;
     player.patrol.target.x = 10;
@@ -34,4 +35,10 @@ test('patrol', () => {
     expect(state.players[0].point).toEqual({x: 0, y: 0});
     expect(state.players[0].patrol.target).toEqual({x: 10, y: 10});
     expect(state.players[0].patrol.nextTarget).toEqual({x: 0, y: 0});
+});
+
+
+test('gather', () => {
+    let rootState = {...InitialWorldState};
+    rootState.players[0].state = PlayerState.Gather;
 });

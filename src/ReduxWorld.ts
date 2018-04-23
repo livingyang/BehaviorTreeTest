@@ -39,15 +39,6 @@ export const InitialWorldState = {
     players: [{...Player}]
 };
 
-// function WorldReducer(state = InitialWorldState, action: any) {
-//     switch (action.type) {
-//         case 'STEP':
-//             return state + 1;
-//         default:
-//             return state
-//     }
-// }
-
 export function AddPlayer(player = {...Player}) {
     return {type: 'ADD_PLAYER', player};
 }
